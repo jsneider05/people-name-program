@@ -1,0 +1,61 @@
+1. The names' cardinality for full, last, and first names:
+    Full names : 48418
+    Last names: 468
+    First names: 3006
+2. The 10 most common last names are:
+    {Barton=143, Lang=136, Ortiz=135, Hilll=134, Hills=130, Terry=129, Johns=128, Romaguera=128, Becker=128, Crist=127}
+3. The 10 most common first names are:
+    {Tara=32, Keon=31, Andreanne=31, Stephania=31, Kaycee=30, Baron=29, Heath=29, Kayley=29, Ulices=29, Charlotte=29}
+4. List of Modified Names
+    4.1 Original list names:
+        Graham, Mckenna
+        Marvin, Garfield
+        McLaughlin, Mariah
+        Lang, Agustina
+        Bradtke, Nikko
+        Adams, Luis
+        Lehner, Matilde
+        Ortiz, Anita
+        Koch, Berry
+        Cartwright, Nicolas
+        Fisher, Elmo
+        Kunze, Gertrude
+        Stanton, Davin
+        Runolfsdottir, Roy
+        Rogahn, Colby
+        Tromp, Ryley
+        Hoppe, Stanley
+        Shanahan, Bethel
+        Hills, Samanta
+        McGlynn, Thad
+        Lynch, Norma
+        Bahringer, Lennie
+        Tillman, Madison
+        Stoltenberg, Donna
+        Dickinson, Sonya
+    4.2 Modified list names:
+        Graham, Sonya
+        Marvin, Mckenna
+        McLaughlin, Garfield
+        Lang, Mariah
+        Bradtke, Agustina
+        Adams, Nikko
+        Lehner, Luis
+        Ortiz, Matilde
+        Koch, Anita
+        Cartwright, Berry
+        Fisher, Nicolas
+        Kunze, Elmo
+        Stanton, Gertrude
+        Runolfsdottir, Davin
+        Rogahn, Roy
+        Tromp, Colby
+        Hoppe, Ryley
+        Shanahan, Stanley
+        Hills, Bethel
+        McGlynn, Samanta
+        Lynch, Thad
+        Bahringer, Norma
+        Tillman, Lennie
+        Stoltenberg, Madison
+        Dickinson, Donna

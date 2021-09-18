@@ -1,0 +1,134 @@
+?  people-name-program mvn clean -U install
+[INFO] Scanning for projects...
+[WARNING]
+[WARNING] Some problems were encountered while building the effective model for com.code.challenge:code-challenge:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 12
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 55, column 12
+[WARNING]
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING]
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING]
+[INFO]
+[INFO] -----------------< com.code.challenge:code-challenge >------------------
+[INFO] Building people-name-program 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ code-challenge ---
+[INFO] Deleting /Users/joan/Documents/people-name-program/target
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ code-challenge ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ code-challenge ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 11 source files to /Users/joan/Documents/people-name-program/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ code-challenge ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/joan/Documents/people-name-program/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ code-challenge ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 5 source files to /Users/joan/Documents/people-name-program/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ code-challenge ---
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.demo.MyRegexTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 s - in com.example.demo.MyRegexTest
+[INFO] Running com.code.challenge.service.MatcherDataServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in com.code.challenge.service.MatcherDataServiceTest
+[INFO] Running com.code.challenge.service.FilterDuplicatedPeopleServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.code.challenge.service.FilterDuplicatedPeopleServiceTest
+[INFO] Running com.code.challenge.service.ModifyPeopleNameServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.code.challenge.service.ModifyPeopleNameServiceTest
+[INFO] Running com.code.challenge.service.ObtainMostCommonServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in com.code.challenge.service.ObtainMostCommonServiceTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ code-challenge ---
+[INFO] Building jar: /Users/joan/Documents/people-name-program/target/code-challenge-0.0.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ code-challenge ---
+[INFO] Installing /Users/joan/Documents/people-name-program/target/code-challenge-0.0.1-SNAPSHOT.jar to /Users/joan/.m2/repository/com/code/challenge/code-challenge/0.0.1-SNAPSHOT/code-challenge-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/joan/Documents/people-name-program/pom.xml to /Users/joan/.m2/repository/com/code/challenge/code-challenge/0.0.1-SNAPSHOT/code-challenge-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.289 s
+[INFO] Finished at: 2021-09-18T00:52:37-05:00
+[INFO] ------------------------------------------------------------------------
+?  people-name-program cd target
+?  target java -jar code-challenge-0.0.1-SNAPSHOT.jar
+?  target cat output.txt
+1. The names' cardinality for full, last, and first names:
+    Full names : 48418
+    Last names: 468
+    First names: 3006
+2. The 10 most common last names are:
+    {Barton=143, Lang=136, Ortiz=135, Hilll=134, Hills=130, Terry=129, Johns=128, Romaguera=128, Becker=128, Crist=127}
+3. The 10 most common first names are:
+    {Tara=32, Keon=31, Andreanne=31, Stephania=31, Kaycee=30, Baron=29, Heath=29, Kayley=29, Ulices=29, Charlotte=29}
+4. List of Modified Names
+    4.1 Original list names:
+        Graham, Mckenna
+        Marvin, Garfield
+        McLaughlin, Mariah
+        Lang, Agustina
+        Bradtke, Nikko
+        Adams, Luis
+        Lehner, Matilde
+        Ortiz, Anita
+        Koch, Berry
+        Cartwright, Nicolas
+        Fisher, Elmo
+        Kunze, Gertrude
+        Stanton, Davin
+        Runolfsdottir, Roy
+        Rogahn, Colby
+        Tromp, Ryley
+        Hoppe, Stanley
+        Shanahan, Bethel
+        Hills, Samanta
+        McGlynn, Thad
+        Lynch, Norma
+        Bahringer, Lennie
+        Tillman, Madison
+        Stoltenberg, Donna
+        Dickinson, Sonya
+    4.2 Modified list names:
+        Graham, Sonya
+        Marvin, Mckenna
+        McLaughlin, Garfield
+        Lang, Mariah
+        Bradtke, Agustina
+        Adams, Nikko
+        Lehner, Luis
+        Ortiz, Matilde
+        Koch, Anita
+        Cartwright, Berry
+        Fisher, Nicolas
+        Kunze, Elmo
+        Stanton, Gertrude
+        Runolfsdottir, Davin
+        Rogahn, Roy
+        Tromp, Colby
+        Hoppe, Ryley
+        Shanahan, Stanley
+        Hills, Bethel
+        McGlynn, Samanta
+        Lynch, Thad
+        Bahringer, Norma
+        Tillman, Lennie
+        Stoltenberg, Madison
+        Dickinson, Donna
