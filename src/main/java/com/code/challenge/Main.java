@@ -21,10 +21,9 @@ import java.util.stream.Stream;
 
 public class Main {
 
-  public static void main(String[] args) throws FileNotFoundException {
+  private static PrintStream fileOut;
 
-    PrintStream fileOut = new PrintStream(FILE_NAME_OUTPUT);
-    setOut(fileOut);
+  public static void main(String[] args) {
 
     ClassLoader classLoader = Main.class.getClassLoader();
 
@@ -42,7 +41,7 @@ public class Main {
       /*
        * 1. The names' cardinality for full, last, and first names
        */
-      out.printf(FORMAT_CARDINALITY,
+      print(FORMAT_CARDINALITY,
           people.stream().distinct().count(),
           mostCommonLastNameStream.get().count(),
           mostCommonFirstNameStream.get().count()
@@ -51,7 +50,7 @@ public class Main {
       /*
        * 2. The 10 most common last names
        */
-      out.printf(FORMAT_TOP_TEN_LAST_NAMES,
+      print(FORMAT_TOP_TEN_LAST_NAMES,
           ObtainMostCommonService.getMostCommonLimited.apply(mostCommonLastNameStream.get(),
               LIMIT_TOP)
       );
@@ -59,7 +58,7 @@ public class Main {
       /*
        * 3. The 10 most common first names
        */
-      out.printf(FORMAT_TOP_TEN_FIRST_NAMES,
+      print(FORMAT_TOP_TEN_FIRST_NAMES,
           ObtainMostCommonService.getMostCommonLimited.apply(mostCommonFirstNameStream.get(),
               LIMIT_TOP)
       );
@@ -73,19 +72,32 @@ public class Main {
       /*
        * 4.1 Original list names
        */
-      out.print(MESSAGE_MODIFIED_ORIGINAL_LIST);
+      print(MESSAGE_MODIFIED_ORIGINAL_LIST);
 
-      peopleFilteredByFullName.forEach(person -> out.printf(FORMAT_NAME, person.toString()));
+      peopleFilteredByFullName.forEach(person -> print(FORMAT_NAME, person.toString()));
 
       /*
        * 4.2 Modified list names
        */
-      out.println(MESSAGE_MODIFIED_LIST_NAMES);
+      print(MESSAGE_MODIFIED_LIST_NAMES);
 
       ModifyPeopleNameService.getModifiedList(peopleFilteredByFullName)
-          .forEach(person -> out.printf(FORMAT_NAME, person.toString()));
+          .forEach(person -> print(FORMAT_NAME, person.toString()));
 
     }
+  }
+
+  static {
+    try {
+      fileOut = new PrintStream(FILE_NAME_OUTPUT);
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    }
+  }
+
+  private static void print(String format, Object ...message) {
+    out.printf(format, message);
+    fileOut.printf(format, message);
   }
 
 }

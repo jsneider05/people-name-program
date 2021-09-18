@@ -17,7 +17,7 @@ public class Constant {
   public static final String MESSAGE_MODIFIED_ORIGINAL_LIST = "4. List of Modified Names\n"
       + "    4.1 Original list names:\n";
   public static final String FORMAT_NAME = "        %s\n";
-  public static final String MESSAGE_MODIFIED_LIST_NAMES = "    4.2 Modified list names:";
+  public static final String MESSAGE_MODIFIED_LIST_NAMES = "    4.2 Modified list names:\n";
 
   public static final String FILE_NAME_INPUT = "data/coding-test-data.txt";
   public static final String FILE_NAME_OUTPUT = "./output.txt";
