@@ -65,7 +65,7 @@ cd people-name-program/target
 
 java -jar code-challenge-${project.version}.jar
 ```
-This generates the ```output.txt``` in the value defined in ```FILE_NAME_OUTPUT```
+This print the result in console and generates the ```output.txt``` in the value defined in ```FILE_NAME_OUTPUT```
 or in the root of by default (in this case in ```people-name-program/target```)
 
 ```bash
@@ -76,7 +76,7 @@ cat output.txt
 
 Or, Run the Main.java class from ```src/main/com/code/challenge/``` 
 
-This generates the ```output.txt``` in the value defined in ```FILE_NAME_OUTPUT``` 
+This print the result in console and generates the ```output.txt``` in the value defined in ```FILE_NAME_OUTPUT``` 
 or in the root of the project by default.
 ```bash
 cd people-name-program/

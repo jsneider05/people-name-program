@@ -1,4 +1,4 @@
-?  people-name-program mvn clean -U install
+?  people-name-program mvn clean install -U
 [INFO] Scanning for projects...
 [WARNING]
 [WARNING] Some problems were encountered while building the effective model for com.code.challenge:code-challenge:jar:0.0.1-SNAPSHOT
@@ -15,62 +15,59 @@
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO]
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ code-challenge ---
-[INFO] Deleting /Users/joan/Documents/people-name-program/target
+[INFO] Deleting /Users/joan/Documents/people-name-program/people-name-program/target
 [INFO]
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ code-challenge ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] Copying 3 resources
+[INFO] Copying 4 resources
 [INFO]
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ code-challenge ---
 [INFO] Changes detected - recompiling the module!
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
-[INFO] Compiling 11 source files to /Users/joan/Documents/people-name-program/target/classes
+[INFO] Compiling 7 source files to /Users/joan/Documents/people-name-program/people-name-program/target/classes
 [INFO]
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ code-challenge ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/joan/Documents/people-name-program/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/joan/Documents/people-name-program/people-name-program/src/test/resources
 [INFO]
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ code-challenge ---
 [INFO] Changes detected - recompiling the module!
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
-[INFO] Compiling 5 source files to /Users/joan/Documents/people-name-program/target/test-classes
+[INFO] Compiling 4 source files to /Users/joan/Documents/people-name-program/people-name-program/target/test-classes
 [INFO]
 [INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ code-challenge ---
 [INFO]
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
-[INFO] Running com.example.demo.MyRegexTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 s - in com.example.demo.MyRegexTest
 [INFO] Running com.code.challenge.service.MatcherDataServiceTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in com.code.challenge.service.MatcherDataServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 s - in com.code.challenge.service.MatcherDataServiceTest
 [INFO] Running com.code.challenge.service.FilterDuplicatedPeopleServiceTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.code.challenge.service.FilterDuplicatedPeopleServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.code.challenge.service.FilterDuplicatedPeopleServiceTest
 [INFO] Running com.code.challenge.service.ModifyPeopleNameServiceTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.code.challenge.service.ModifyPeopleNameServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.code.challenge.service.ModifyPeopleNameServiceTest
 [INFO] Running com.code.challenge.service.ObtainMostCommonServiceTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in com.code.challenge.service.ObtainMostCommonServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in com.code.challenge.service.ObtainMostCommonServiceTest
 [INFO]
 [INFO] Results:
 [INFO]
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
 [INFO]
 [INFO]
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ code-challenge ---
-[INFO] Building jar: /Users/joan/Documents/people-name-program/target/code-challenge-0.0.1-SNAPSHOT.jar
+[INFO] Building jar: /Users/joan/Documents/people-name-program/people-name-program/target/code-challenge-0.0.1-SNAPSHOT.jar
 [INFO]
 [INFO] --- maven-install-plugin:2.4:install (default-install) @ code-challenge ---
-[INFO] Installing /Users/joan/Documents/people-name-program/target/code-challenge-0.0.1-SNAPSHOT.jar to /Users/joan/.m2/repository/com/code/challenge/code-challenge/0.0.1-SNAPSHOT/code-challenge-0.0.1-SNAPSHOT.jar
-[INFO] Installing /Users/joan/Documents/people-name-program/pom.xml to /Users/joan/.m2/repository/com/code/challenge/code-challenge/0.0.1-SNAPSHOT/code-challenge-0.0.1-SNAPSHOT.pom
+[INFO] Installing /Users/joan/Documents/people-name-program/people-name-program/target/code-challenge-0.0.1-SNAPSHOT.jar to /Users/joan/.m2/repository/com/code/challenge/code-challenge/0.0.1-SNAPSHOT/code-challenge-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/joan/Documents/people-name-program/people-name-program/pom.xml to /Users/joan/.m2/repository/com/code/challenge/code-challenge/0.0.1-SNAPSHOT/code-challenge-0.0.1-SNAPSHOT.pom
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  10.289 s
-[INFO] Finished at: 2021-09-18T00:52:37-05:00
+[INFO] Total time:  7.828 s
+[INFO] Finished at: 2021-09-18T02:20:01-05:00
 [INFO] ------------------------------------------------------------------------
 ?  people-name-program cd target
 ?  target java -jar code-challenge-0.0.1-SNAPSHOT.jar
-?  target cat output.txt
 1. The names' cardinality for full, last, and first names:
     Full names : 48418
     Last names: 468
